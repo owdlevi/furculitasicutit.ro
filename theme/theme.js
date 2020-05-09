@@ -32,7 +32,7 @@ export default {
     headerbg: '#fff',
     title: '#f4f7fc',
     primary: '#fafafa',
-    accent: '#3F51B5',
+    accent: '#eb4a36',
     accentColor: '#fff',
     modes: {
       dark: {
@@ -63,9 +63,11 @@ export default {
       backgroundColor: 'headerbg',
       display: 'flex',
       alignItems: 'center',
+      justifyContent: 'space-between',
       px: 4,
       position: 'fixed',
-      top: 0
+      top: 0,
+      zIndex: 100
     },
     footer: {
       display: 'flex',

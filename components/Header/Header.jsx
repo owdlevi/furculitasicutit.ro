@@ -9,51 +9,93 @@ const Header = (props) => {
       sx={{
         variant: 'styles.header'
       }}>
-      <Link href="/">
-        <a
-          sx={{
-            height: '50px'
-          }}>
-          <img
+      <div
+        sx={{
+          width: ['40%', '20%'],
+          order: ['1', '2'],
+          textAlign: 'center'
+        }}>
+        <Link href="/">
+          <a
             sx={{
-              height: '50px'
-            }}
-            alt="UI Logo"
-            src="/assets/furculitasicutit.svg"
-          />
-          <span
+              height: '40px'
+            }}>
+            <img
+              sx={{
+                height: '40px'
+              }}
+              alt="UI Logo"
+              src="/assets/logo-furculita-si-cutit.svg"
+            />
+            <span
+              sx={{
+                position: 'absolute',
+                width: 1,
+                height: 1,
+                overflow: 'hidden',
+                top: -9999
+              }}>
+              Home
+            </span>
+          </a>
+        </Link>
+      </div>
+
+      <div
+        sx={{
+          width: '30%',
+          order: 1
+        }}>
+        <Link href="/">
+          <a
             sx={{
-              position: 'absolute',
-              width: 1,
-              height: 1,
-              overflow: 'hidden',
-              top: -9999
+              variant: 'styles.navlink',
+              mr: 3,
+              py: 2
             }}>
             Home
-          </span>
-        </a>
-      </Link>
-      <div sx={{ mx: 'auto' }} />
-      <Link href="/blog">
-        <a
-          sx={{
-            variant: 'styles.navlink',
-            ml: 3,
-            py: 2
-          }}>
-          Blog
-        </a>
-      </Link>
-      <Link href="/about">
-        <a
-          sx={{
-            variant: 'styles.navlink',
-            ml: 3,
-            py: 2
-          }}>
-          About
-        </a>
-      </Link>
+          </a>
+        </Link>
+        <Link href="/about">
+          <a
+            sx={{
+              variant: 'styles.navlink',
+              mr: 3,
+              py: 2
+            }}>
+            Retele mele
+          </a>
+        </Link>
+      </div>
+      <div
+        sx={{
+          width: '30%',
+          order: 3,
+          justifyContent: 'flex-end',
+          alignItems: 'flex-end',
+          textAlign: 'right'
+        }}>
+        <Link href="/blog">
+          <a
+            sx={{
+              variant: 'styles.navlink',
+              ml: 3,
+              py: 2
+            }}>
+            Blog
+          </a>
+        </Link>
+        <Link href="/despre-noi">
+          <a
+            sx={{
+              variant: 'styles.navlink',
+              ml: 3,
+              py: 2
+            }}>
+            Despre Noi
+          </a>
+        </Link>
+      </div>
     </header>
   )
 }

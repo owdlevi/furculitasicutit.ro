@@ -7,34 +7,66 @@ const Hero = ({ title, intro, cta, ctaSecondary }) => {
   return (
     <section
       sx={{
-        backgroundImage: 'url(/assets/undraw_innovative_b409.svg)',
+        backgroundImage: 'url(/assets/hero-bg.jpg)',
         backgroundColor: '#f8f9fa',
-        backgroundPosition: ['left 0 top 50%', 'left 55vw top 50%'],
-        backgroundSize: ['400px', '400px'],
+        backgroundPosition: 'left 0 top 0',
+        backgroundSize: '100%',
         backgroundRepeat: 'no-repeat',
         height: ['auto', '450px'],
         display: 'flex',
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        m: 4,
+        position: 'relative',
+        zIndex: 0
       }}>
+      <div
+        sx={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '40px',
+          display: 'flex',
+          justifyContent: 'center'
+        }}>
+        <svg
+          sx={{
+            height: '40px',
+            width: '450px',
+            display: 'inline-block'
+          }}
+          xmlns="http://www.w3.org/2000/svg">
+          <rect width="100%" height="100%" fill="none"></rect>
+          <g class="currentLayer">
+            <path
+              d="M1125.4.3H457.2c-102.7 0-128.8 25-231.5 25C121 25.3 94.9.3-9.8.3h-669.8v-49h1805v49z"
+              fill="#FFF"
+              fill-rule="nonzero"></path>
+          </g>
+        </svg>
+      </div>
       <Container>
         <div
           sx={{
             display: 'flex',
-            alignItems: 'start',
-            justifyContent: 'flex-start',
+            alignItems: 'center',
+            justifyContent: 'flex-center',
             maxWidth: '408px',
             flexFlow: 'column',
             height: '100%',
+            mx: 'auto',
             pt: ['50vh', 0]
           }}>
           <h1
             sx={{
-              variant: 'styles.h1'
+              variant: 'styles.h1',
+              color: 'white',
+              textAlign: 'center'
             }}>
             {title}
           </h1>
-          <p>{intro}</p>
+          <p sx={{ color: 'white', textAlign: 'center' }}>{intro}</p>
           <div
             sx={{
               mt: 4

@@ -27,10 +27,10 @@ export default () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero
-        title="Let's build the future of the web"
-        intro="Get the web's modern capabilities on your own sites and apps with useful guidance and analysis from web.dev."
-        cta={{ link: '/', label: 'Contact Us' }}
-        ctaSecondary={{ link: '/', label: 'Latest news' }}
+        title="Colectia ta de retete online!"
+        intro="Salveaza retelete preferate intr-un singur loc."
+        cta={{ link: '/', label: 'Login' }}
+        ctaSecondary={{ link: '/', label: 'Retete online' }}
       />
       <section>
         <Container
