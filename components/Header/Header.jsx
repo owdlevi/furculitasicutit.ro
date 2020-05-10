@@ -2,6 +2,7 @@
 import { jsx } from 'theme-ui'
 import Link from 'next/link'
 import PropTypes from 'prop-types'
+import UserMenu from '../User/UserMenu'
 
 const Header = (props) => {
   return (
@@ -11,8 +12,8 @@ const Header = (props) => {
       }}>
       <div
         sx={{
-          width: ['40%', '20%'],
-          order: ['1', '2'],
+          width: ['100%', '100%', '20%'],
+          order: ['1', '1', '2'],
           textAlign: 'center'
         }}>
         <Link href="/">
@@ -44,6 +45,7 @@ const Header = (props) => {
       <div
         sx={{
           width: '30%',
+          display: ['none', 'none', 'flex'],
           order: 1
         }}>
         <Link href="/">
@@ -56,7 +58,7 @@ const Header = (props) => {
             Home
           </a>
         </Link>
-        <Link href="/about">
+        <Link href="/retele-mele">
           <a
             sx={{
               variant: 'styles.navlink',
@@ -70,10 +72,12 @@ const Header = (props) => {
       <div
         sx={{
           width: '30%',
+          display: ['none', 'none', 'flex'],
           order: 3,
           justifyContent: 'flex-end',
-          alignItems: 'flex-end',
-          textAlign: 'right'
+          alignItems: 'center',
+          textAlign: 'right',
+          verticalAlign: 'center'
         }}>
         <Link href="/blog">
           <a
@@ -89,12 +93,13 @@ const Header = (props) => {
           <a
             sx={{
               variant: 'styles.navlink',
-              ml: 3,
+              mx: 3,
               py: 2
             }}>
             Despre Noi
           </a>
         </Link>
+        <UserMenu />
       </div>
     </header>
   )
