@@ -17,11 +17,11 @@ export default {
     heading: 1.125
   },
   sizes: {
-    container: ['40em', '52em', '960px']
+    container: ['40em', '52em', '1200px']
   },
   layout: {
     container: {
-      maxWidth: '960px',
+      maxWidth: '1200px',
       mx: 'auto',
       p: 4
     }
