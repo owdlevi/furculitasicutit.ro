@@ -113,7 +113,7 @@ const RecipeCardBox = ({ recipe }) => {
                 py: 1,
                 px: 2,
                 borderRadius: '5px',
-                backgroundColor: 'accent',
+                backgroundColor: 'green',
                 color: 'white',
                 fontSize: '12px',
                 verticalAlign: 'center',

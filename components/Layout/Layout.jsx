@@ -13,10 +13,11 @@ const Layout = ({ children }) => {
         // set this to `minHeight: '100vh'` for full viewport height
         // minHeight: '100vh'
       }}>
-      <Header />
       <main
         sx={{
-          variant: 'styles.main'
+          variant: 'styles.main',
+          m: 0,
+          p: 0
         }}>
         {/* <Container>{children}</Container> */}
         {children}

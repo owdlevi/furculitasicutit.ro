@@ -7,20 +7,11 @@ const Footer = (props) => {
   return (
     <footer
       sx={{
-        variant: 'styles.footer'
+        variant: 'styles.footer',
+        justifyContent: 'center',
+        height: 80
       }}>
-      <Link href="/">
-        <a sx={{ variant: 'styles.navlink', p: 2 }}>Home</a>
-      </Link>
-      <Link href="/">
-        <a sx={{ variant: 'styles.navlink', p: 2 }}>Blog</a>
-      </Link>
-      <Link href="/">
-        <a sx={{ variant: 'styles.navlink', p: 2 }}>About</a>
-      </Link>
-
-      <div sx={{ mx: 'auto' }} />
-      <div sx={{ p: 2 }}>© 2020 CrazyCode</div>
+      <div sx={{ p: 2 }}>© 2020 www.furculitasicutit.ro</div>
     </footer>
   )
 }
